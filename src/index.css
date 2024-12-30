@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CarouselStyles.css */
+
+.carousel .control-arrow {
+    background: none !important; /* Removes the default background */
+    opacity: 1 !important;       /* Makes the arrows fully visible */
+  }
+  
+  .carousel .control-arrow:hover {
+    background: none !important; /* Ensures no background on hover */
+  }
+/* 
+  .card {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  } */
+  
