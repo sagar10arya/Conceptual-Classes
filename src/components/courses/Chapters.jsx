@@ -14,47 +14,73 @@ function Chapters() {
 
   // Find the course based on courseId
   const course = coursesData.find((c) => c.id === parseInt(courseId));
-  console.log(course);
+  // console.log(course);
   if (!course) {
-    return <h1>Course not found!</h1>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Course not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
 
-
-  // Find the level in the course that matches the sanitized levelName
-  // level code**************************************************************************************
-  // Find the level using identifier (no sanitization required)
+  // level 
   const level = course.levels.find(
-    (lvl) => Number(lvl.name) === Number(subjectId)
+    (lvl) =>
+      lvl.name.toString() === levelName || // Match string-based level name
+      lvl.name.toString() === subjectId || // Match string-based subjectId
+      Number(lvl.name) === Number(levelName) || // Match number-based level name
+      Number(lvl.name) === Number(subjectId) // Match number-based subjectId
   );
 
-  // If no level is found
-  // if (!level) {
-  //   return <p className="text-center text-red-500">Level not found!</p>;
-  // }
-
-  // ***************************************************************************************************
   // Use the matched level or fallback level
   const matchedLevel = level;
 
   // Show error if no level is matched
   if (!matchedLevel) {
-    return <p className="text-center text-red-500">Level not found!</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Level not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   // Find the subject based on subjectId
   const matchedSubject = matchedLevel.subjects.find(
     (subject) => subject.name.toLowerCase() === subjectName.toLowerCase()
   );
-  console.log("Matched Subject::::", matchedSubject);
+  // console.log("Matched Subject::::", matchedSubject);
 
   if (!matchedSubject) {
-    return <h1>Subject not found!</h1>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Subject not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
-
-  // Now filter the chapters by levelName to ensure only the correct chapters are shown for the current level
-  // const filteredChapters = matchedSubject.chapters.filter(
-  //   (chapter) => chapter.level === levelName // Assuming chapters have a 'level' field to differentiate between class 11 and class 12
-  // );
 
   const filteredChapters = matchedSubject.chapters;
 

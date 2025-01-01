@@ -15,6 +15,9 @@ import Gallery from './pages/Gallery';
 import Level from './components/courses/Level';
 import Subject from './components/courses/Subject';
 import Chapters from './components/courses/Chapters';
+import TermsPage from './components/Footer/company/TermsPage';
+import PrivacyPolicy from './components/Footer/company/PrivacyPolicy';
+import PaymentTerms from './components/Footer/company/PaymentTerms';
 
 const router = createBrowserRouter([
   {
@@ -73,6 +76,19 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery />,
+      },
+      // Company -- terms, policy, payment
+      {
+        path: "/terms",
+        element: <TermsPage />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/payment-terms",
+        element: <PaymentTerms />,
       },
     ],
   },

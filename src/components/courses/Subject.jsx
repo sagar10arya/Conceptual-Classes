@@ -15,7 +15,19 @@ function Subject() {
 
   // Show error if course not found
   if (!course) {
-    return <p className="text-center text-red-500">Course not found!</p>;
+    rreturn(
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Course not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   // console.log("Course levels:", course.levels);
@@ -23,23 +35,41 @@ function Subject() {
 
   // level code**************************************************************************************
   // Find the level using identifier (no sanitization required)
-  const level = course.levels.find((lvl) => Number(lvl.name) === Number(subjectId));
+  // const level = course.levels.find((lvl) => Number(lvl.name) === Number(subjectId));
+  // Find the level using both number and string matching
+  const level = course.levels.find(
+    (lvl) =>
+      lvl.name.toString() === levelName || // Match string-based level name
+      lvl.name.toString() === subjectId || // Match string-based subjectId
+      Number(lvl.name) === Number(levelName) || // Match number-based level name
+      Number(lvl.name) === Number(subjectId) // Match number-based subjectId
+  );
 
   // If no level is found
   if (!level) {
-    return <p className="text-center text-red-500">Level not found!</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Level not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   // ***************************************************************************************************
   // Navigate to the subject-specific page on click
   const handleSubjectClick = (subjectName) => {
-    // navigate(`/study-material/${courseId}/${levelName}/${subjectName}`);
-    console.log("Subbbb::", subjectName);
+    // console.log("Subbbb::", subjectName);
     navigate(
       `/study-material/${courseId}/${levelName}/${subjectId}/${subjectName}/chapters`
     );
   };
-
 
   // Render the UI
   return (

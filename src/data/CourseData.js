@@ -5,7 +5,8 @@ const coursesData = [
     description: "Access notes and resources for JEE preparation.",
     levels: [
       {
-        name: "11",
+        name: "Mains",
+        slug: 'mains',
         subjects: [
           {
             name: "Physics",
@@ -511,7 +512,8 @@ const coursesData = [
         ],
       },
       {
-        name: "12",
+        name: "Advanced (Coming Soon)",
+        slug: 'advanced',
         subjects: [
           {
             name: "Physics",
@@ -535,7 +537,8 @@ const coursesData = [
     description: "Find the best study material for NEET exams.",
     levels: [
       {
-        name: "11",
+        name: "Neet UG",
+        slug: 'neet-ug' ,
         subjects: [
           {
             name: "Physics",
@@ -1004,80 +1007,28 @@ const coursesData = [
           },
         ],
       },
-      {
-        name: "12",
-        subjects: [
-          {
-            name: "Physics",
-            chapters: [
-              {
-                name: "Kinematics",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/physics/kinematics/notes",
-                  },
-                ],
-              },
-              {
-                name: "Newton's laws of motion",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/physics/newton/notes",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Chemistry",
-            chapters: [
-              {
-                name: "Atomic Structure",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/chemistry/atomic-structure/notes",
-                  },
-                ],
-              },
-              {
-                name: "Organic Chemistry",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/chemistry/atomic-structure/notes",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Biology",
-            chapters: [
-              {
-                name: "Cell Structure",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/chemistry/atomic-structure/notes",
-                  },
-                ],
-              },
-              {
-                name: "Reproduction",
-                resources: [
-                  {
-                    type: "Notes",
-                    link: "/resources/jee/11/chemistry/atomic-structure/notes",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
+      // {
+      //   name: "12",
+      //   subjects: [
+      //     {
+      //       name: "Physics",
+      //       chapters: [
+      //       ],
+      //     },
+      //     {
+      //       name: "Chemistry",
+      //       chapters: [
+              
+      //       ],
+      //     },
+      //     {
+      //       name: "Biology",
+      //       chapters: [
+              
+      //       ],
+      //     },
+      //   ],
+      // },
     ],
   },
   {
@@ -2635,7 +2586,12 @@ const coursesData = [
     id: 5,
     category: "CUET",
     description: "Comprehensive guides and notes for CUET.",
-    levels: [],
+    levels: [
+      {
+        name: "cuet ug",
+        subjects:[]
+      }
+    ],
   },
 ];
 

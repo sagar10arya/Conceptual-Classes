@@ -1,7 +1,7 @@
+import coursesData from '../../data/CourseData'
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ExamCard from '../ExamCard'
-import coursesData from '../../data/CourseData'
 
 const Level = () => {
   const { courseId } = useParams(); // Fetch courseId from the URL
@@ -12,7 +12,19 @@ const Level = () => {
 
   // Handle invalid courseId
   if (!course) {
-    return <p className="text-center text-red-500">Course not found!</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+          <i className="fas fa-exclamation-circle text-9xl text-red-500 mb-4"></i>
+          <p className="text-3xl text-red-500 font-semibold mb-4">
+            Course not found!
+          </p>
+          <p className="text-xl text-gray-700">
+            Please check the level or try again later.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   const handleCardClick = (levelName, examName) => {
