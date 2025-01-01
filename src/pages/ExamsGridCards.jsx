@@ -22,7 +22,7 @@ const ExamCardsGrid = () => {
           key={exam.id}
           examName={exam.name}
           description={exam.description}
-          onClick={() => handleCardClick(exam.name)}
+          // onClick={() => handleCardClick(exam.name)}
         />
       ))}
     </div>

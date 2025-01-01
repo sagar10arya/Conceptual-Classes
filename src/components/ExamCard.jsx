@@ -6,7 +6,7 @@ const ExamCard = ({ examName, description, onClick }) => {
       className="min-w-[150px] max-w-[300px] w-full h-40 bg-white shadow-lg rounded-lg overflow-hidden border 
        hover:bg-gray-300 hover:scale-105 transition-transform duration-300 ease-in-out 
        cursor-pointer flex items-center justify-center text-center"
-      // onClick={onClick}
+      onClick={onClick}
     >
       <div className="p-5">
         <h2 className="text-lg md:text-xl font-bold text-gray-600">{examName}</h2>

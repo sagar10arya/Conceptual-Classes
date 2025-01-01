@@ -6,7 +6,8 @@ function ProfileData() {
     {
       name: "Navneet Joshi",
       role: "Founder",
-      image: "https://images.pexels.com/photos/3772711/pexels-photo-3772711.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image:
+        "https://images.pexels.com/photos/3772711/pexels-photo-3772711.jpeg?auto=compress&cs=tinysrgb&w=600",
       socialLinks: [
         {
           platform: "Facebook",
@@ -23,12 +24,12 @@ function ProfileData() {
           color: "light-blue",
         },
         {
-            platform: "LinkedIn",
-            tooltip: "Connect",
-            url: "https://linkedin.com",
-            icon: "fab fa-linkedin",
-            color: "blue",
-          },
+          platform: "LinkedIn",
+          tooltip: "Connect",
+          url: "https://linkedin.com",
+          icon: "fab fa-linkedin",
+          color: "blue",
+        },
         {
           platform: "Instagram",
           tooltip: "Follow",
@@ -41,7 +42,8 @@ function ProfileData() {
     {
       name: "Manoj Joshi",
       role: "Co-Founder",
-      image: "https://images.pexels.com/photos/29380482/pexels-photo-29380482/free-photo-of-charming-cat-in-a-library-with-stacked-books.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image:
+        "https://images.pexels.com/photos/29380482/pexels-photo-29380482/free-photo-of-charming-cat-in-a-library-with-stacked-books.jpeg?auto=compress&cs=tinysrgb&w=600",
       socialLinks: [
         {
           platform: "LinkedIn",
@@ -62,7 +64,8 @@ function ProfileData() {
     {
       name: "Rishabh Joshi",
       role: "Co-Founder",
-      image: "https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image:
+        "https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&w=600",
       socialLinks: [
         {
           platform: "LinkedIn",
@@ -83,21 +86,29 @@ function ProfileData() {
     {
       name: "Sagar Arya",
       role: "Co-Founder",
-      image: "https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image:
+        "https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=600",
       socialLinks: [
         {
           platform: "LinkedIn",
           tooltip: "Connect",
-          url: "https://linkedin.com",
+          url: "https://linkedin.com/in/sagar10arya",
           icon: "fab fa-linkedin",
           color: "blue",
         },
         {
           platform: "GitHub",
           tooltip: "Star",
-          url: "https://github.com",
+          url: "https://github.com/sagar10arya",
           icon: "fab fa-github",
           color: "gray",
+        },
+        {
+          platform: "Instagram",
+          tooltip: "Follow",
+          url: "https://instagram.com/sagar10___",
+          icon: "fab fa-instagram",
+          color: "purple",
         },
       ],
     },

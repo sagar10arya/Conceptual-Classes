@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 lg:flex lg:justify-between lg:space-x-8 gap-10">
         {/* Column 1 */}
         <div className="text-center lg:text-left lg:flex-1">
-          <h2 className="text-4xl text-blue-200 font-bold mb-4">
+          <h2 className="text-4xl text-blue-gray-500 font-bold mb-4">
             Conceptual Classes
           </h2>
           <p>
