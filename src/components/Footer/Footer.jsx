@@ -21,44 +21,44 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            © 2024 <span className="font-semibold">Conceptual Classes</span>:
+            © 2025 <span className="font-semibold">Conceptual Classes</span>:
             All rights reserved.
           </p>
           <div className="flex justify-center lg:justify-start mt-4 space-x-4">
-            <a
+            {/* <a
               href="www.facebook.com"
               aria-label="Facebook"
               target="_blank"
               className="hover:text-blue-400"
             >
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="www.twitter.com"
               aria-label="Twitter"
               target="_blank"
               className="hover:text-blue-400"
             >
               <i className="fab fa-twitter"></i>
-            </a>
+            </a> */}
             <a
-              href="www.instagram.com"
+              href="www.instagram.com/conceptual_classes_"
               aria-label="Instagram"
               target="_blank"
               className="hover:text-blue-400"
             >
               <i className="fab fa-instagram"></i>
             </a>
-            <a
+            {/* <a
               href="www.linkedin.com"
               aria-label="LinkedIn"
               target="_blank"
               className="hover:text-blue-400"
             >
               <i className="fab fa-linkedin"></i>
-            </a>
+            </a> */}
             <a
-              href="www.youtube.com"
+              href="https://www.youtube.com/@conceptualclasses2624"
               aria-label="YouTube"
               target="_blank"
               className="hover:text-blue-400"
@@ -129,29 +129,29 @@ const Footer = () => {
           <h3 className="font-bold mb-4">Examination Info (Soon)</h3>
           <ul>
             <li>
-              <a href="#" className="hover:underline hover:text-blue-200">
+              {/* <a href="/" className="hover:underline hover:text-blue-200"> */}
                 JEE Mains
-              </a>
+              {/* </a> */}
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-blue-200">
+              {/* <a href="#" className="hover:underline hover:text-blue-200"> */}
                 JEE Advanced
-              </a>
+              {/* </a> */}
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-blue-200">
+              {/* <a href="#" className="hover:underline hover:text-blue-200"> */}
                 NEET
-              </a>
+              {/* </a> */}
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-blue-200">
+              {/* <a href="#" className="hover:underline hover:text-blue-200"> */}
                 CUET
-              </a>
+              {/* </a> */}
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-blue-200">
+              {/* <a href="#" className="hover:underline hover:text-blue-200"> */}
                 Boards
-              </a>
+              {/* </a> */}
             </li>
           </ul>
         </div>
@@ -159,7 +159,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center mt-8 border-t border-gray-700 pt-4">
-        <p>Conceptual Classes Pvt. Ltd. © All Rights Reserved.</p>
+        <p>Conceptual Classes Pvt. Ltd. © 2025 All Rights Reserved.</p>
       </div>
     </footer>
   );

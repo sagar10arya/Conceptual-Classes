@@ -9,20 +9,7 @@ function ProfileData() {
       image:
         "https://images.pexels.com/photos/3772711/pexels-photo-3772711.jpeg?auto=compress&cs=tinysrgb&w=600",
       socialLinks: [
-        {
-          platform: "Facebook",
-          tooltip: "Like",
-          url: "https://facebook.com",
-          icon: "fab fa-facebook",
-          color: "blue",
-        },
-        {
-          platform: "Twitter",
-          tooltip: "Follow",
-          url: "https://twitter.com",
-          icon: "fab fa-twitter",
-          color: "light-blue",
-        },
+        
         {
           platform: "LinkedIn",
           tooltip: "Connect",
@@ -33,7 +20,7 @@ function ProfileData() {
         {
           platform: "Instagram",
           tooltip: "Follow",
-          url: "https://instagram.com",
+          url: "https://instagram.com/navneet_joshi95",
           icon: "fab fa-instagram",
           color: "purple",
         },
